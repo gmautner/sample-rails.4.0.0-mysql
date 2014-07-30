@@ -5,6 +5,8 @@ defaults: &defaults
   reconnect: false
   database: my_app_db
   username: root
+  password: 6kuLqDLCaV
+  host: mysql-giba-ruby.jelasticlw.com.br
   port: 3306
 
 development:
