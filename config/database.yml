@@ -1,22 +1,32 @@
-defaults: &defaults
+development:
   adapter: mysql2
   encoding: utf8
   pool: 5
   reconnect: false
-  database: my_app_db
+  database: my_app_db_devel
   username: root
   password: 6kuLqDLCaV
   host: mysql-giba-ruby.jelasticlw.com.br
   port: 3306
 
-development:
-  <<: *defaults
-
 test:
-  <<: *defaults
-
-staging:
-  <<: *defaults
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  reconnect: false
+  database: my_app_db_test
+  username: root
+  password: 6kuLqDLCaV
+  host: mysql-giba-ruby.jelasticlw.com.br
+  port: 3306
 
 production:
-  <<: *defaults
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  reconnect: false
+  database: my_app_db_production
+  username: root
+  password: 6kuLqDLCaV
+  host: mysql-giba-ruby.jelasticlw.com.br
+  port: 3306
